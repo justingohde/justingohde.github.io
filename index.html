@@ -41,11 +41,13 @@ var questionAnswers = [];
 
 
 
-$.getJSON( "http://justingohde.github.io/Quiz.json", function( json ) {
-	quiz1=json;
- });
+
 
 $(document).ready(function(){
+    $.getJSON( "http://justingohde.github.io/Quiz.json", function( json ) {
+	quiz1=json;
+ });
+    
        $("h1").text("Quiz - "+quiz1.name);
 
     $('.quiz').hide();
