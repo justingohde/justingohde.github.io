@@ -1,4 +1,4 @@
-{
+callback({
    "name": "Basic Arithmetic",
    "questions": 
       [
@@ -19,6 +19,6 @@
 	 "correctAnswer":"1"
 	}
       ]	
-}
+});
 
 
