@@ -38,24 +38,37 @@ var firstname;
 var userAnswers = []; 
 var questionAnswers = [];
     
-
+function callback(response) {
+    "use strict";
+    
+    // See below for an explanation.
+    quiz1 = response;
+}
 
 
 
 
 $(document).ready(function(){
-    $.getJSON( "http://justingohde.github.io/Quiz.json", function( json ) {
-	quiz1=json;
- });
+       $.ajax({
+        type: "POST",
+        dataType: "jsonp",
+        jsonp: "callback",
+        url: "http://justingohde.github.io/Quiz.json",
+        crossDomain: true
+    });
+   
+ 
     
-       $("h1").text("Quiz - "+quiz1.name);
+  //  $("h1").text("Quiz - "+quiz1.name);
 
     $('.quiz').hide();
     $('.grade').hide();
-    $("h1").text("Quiz - "+quiz1.name);
-    
+   // $("h1").text("Quiz - "+quiz1.name);
+   
      $(".start").on("click", function(){
-         $('.hello').hide();
+         
+         //console.log(quiz1.name);
+        $('.hello').hide();
          $('.quiz').show();
          $('.previous').hide();
           firstname = $('.FirstName').val();
@@ -76,7 +89,7 @@ $(document).ready(function(){
          }
 
   });
-    
+   
       $(".next").on("click", function(){
           $('.previous').show();
           
@@ -181,8 +194,8 @@ $(document).ready(function(){
           
   });
     
-
 });
+ 
 </script>
 
 
