@@ -1,6 +1,16 @@
 
 var i =0;
-var quiz1;
+var quiz1 = {
+   "name": " ",
+   "questions": 
+      [
+	{"question": "TEST", 
+	 "choices": ["A", "B", "C", "D"], 
+	 "correctAnswer":"3" 
+	},
+
+      ]	
+};
 var firstname;
 var userAnswers = []; 
 var questionAnswers = [];
@@ -13,16 +23,20 @@ $(document).ready(function(){
     
     $.getJSON("Quiz2.json",function(result){
             quiz1=result;
+    }).done(function () { // Suppose promise returns "abc"
+        $("h1").text("Quiz - "+quiz1.name);
+        $("h1").text("Quiz - "+quiz1.name);
+
     });
   
    
  
     
-   // $("h1").text("Quiz - "+quiz1.name);
+ //  $("h1").text("Quiz - "+quiz1.name);
 
     $('.quiz').hide();
     $('.grade').hide();
-   //$("h1").text("Quiz - "+quiz1.name);
+ //  $("h1").text("Quiz - "+quiz1.name);
    
      $(".start").on("click", function(){
          
