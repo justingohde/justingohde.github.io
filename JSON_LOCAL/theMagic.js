@@ -21,7 +21,7 @@ var questionAnswers = [];
 
 $(document).ready(function(){
     
-    $.getJSON("Quiz2.json",function(result){
+    $.getJSON("../Quiz2.json",function(result){
             quiz1=result;
     }).done(function () {
         $("h1").text("Quiz - "+quiz1.name);
