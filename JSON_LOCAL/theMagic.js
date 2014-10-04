@@ -23,10 +23,8 @@ $(document).ready(function(){
     
     $.getJSON("Quiz2.json",function(result){
             quiz1=result;
-    }).done(function () { // Suppose promise returns "abc"
+    }).done(function () {
         $("h1").text("Quiz - "+quiz1.name);
-        $("h1").text("Quiz - "+quiz1.name);
-
     });
   
    
