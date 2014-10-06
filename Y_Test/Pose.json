@@ -1,24 +1,43 @@
 {
-   "name": "Basic Arithmetic",
-   "questions": 
-      [
-	{"question": "What is 2 + 3?", 
-	 "choices": ["2", "3", "4", "5"], 
-	 "correctAnswer":"3" 
+   "pose_name": {
+       "English": "Downward Facing Dog",
+        "Spanish": "Perro boca abajo",
+        "Sancript": "Adho Mukha Svanasana"
+    },
+   "pose_photo": "http://justingohde.github.io/Y_Test/images/pose_01.gif",
+   "long_description": "This pose is meant to be ....",
+    "difficulty": 1,
+    "type":[
+        {"description":"Standing"
+        },
+        {"description":"Resting"
+        },
+        {"description":"Mild Inversion"
+        }
+    ],
+    "steps":[
+        {"description": "Come onto the floor on your hands and knees. Set your knees directly below your hips and your hands slightly forward of your shoulders. Spread your palms, index fingers parallel or slightly turned out, and turn your toes under."
+        },
+        {"description": "Exhale and lift your knees away from the floor. At first keep the knees slightly bent and the heels lifted away from the floor. Lengthen your tailbone away from the back of your pelvis and press it lightly toward the pubis. Against this resistance, lift the sitting bones toward the ceiling, and from your inner ankles draw the inner legs up into the groins."
+        },
+        {"description":"Then with an exhalation, push your top thighs back and stretch your heels onto or down toward the floor. Straighten your knees but be sure not to lock them. Firm the outer thighs and roll the upper thighs inward slightly. Narrow the front of the pelvis."
+        },
+        {"description":"Firm the outer arms and press the bases of the index fingers actively into the floor. From these two points lift along your inner arms from the wrists to the tops of the shoulders. Firm your shoulder blades against your back, then widen them and draw them toward the tailbone. Keep the head between the upper arms; don’t let it hang."
+        },
+        {"description":"Adho Mukha Svanasana is one of the poses in the traditional Sun Salutation sequence. It’s also an excellent yoga asana all on its own. Stay in this pose anywhere from 1 to 3 minutes. Then bend your knees to the floor with an exhalation and rest in Child’s Pose."
+        }        
+    ],
+    "benefits":[
+	{"description": "Calms the brain and helps relieve stress and mild depression"
 	},
-	{"question": "What is 2 * 3?", 
-	 "choices": ["6", "7", "8", "9"], 
-	 "correctAnswer":"0"
+    {"description": "Energizes the body"
 	},
-	{"question": "What is 2 / 3?", 
-	 "choices": ["1", "0", "2", "3"], 
-	 "correctAnswer":"1"
+    {"description": "Improves digestion"
 	},
-	{"question": "What is 0 + 3?", 
-         "choices": ["2", "3", "4", "5", "6", "7"], 
-	 "correctAnswer":"1"
+    {"description": "Relieves headache, insomnia, back pain, and fatigue"
 	}
       ]	
+   
 }
 
 
