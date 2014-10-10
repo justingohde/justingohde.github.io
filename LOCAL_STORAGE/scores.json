@@ -1,0 +1,14 @@
+{
+    "high_scores":[
+        {"username": "hello123",
+         "score": ".75",
+         "date": " I don't know Yet"
+        },
+        {"username": "user123",
+         "score": ".50",
+         "date": " I don't know Yet"
+        }
+    ]
+}
+
+
