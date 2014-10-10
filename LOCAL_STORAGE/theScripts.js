@@ -11,7 +11,7 @@ function logOn() {
     if (name != null) {///a list of usernames already exist
         //1) go through each user to see if this username exists
         for(var i = 0; i<name.users.length; i++){
-          alert(name.users[i].username);
+          //alert(name.users[i].username);
             if(name.users[i].username === uName){
                     
                 if(name.users[i].password === pWord){
@@ -38,10 +38,12 @@ function logOn() {
         newUser.date_first=d;
         newUser.date_last=d;
         name.users.push(newUser);
+        alert("adding user:"+ JSON.stringify(name));
+
         localStorage.setItem("usernames", JSON.stringify(name));
        }
     }else{
-      
+        alert("no users yet!");
         var d = new Date();
         var n = d.toJSON();
         var newUser = '{"users": [{"username": "'+uName+ '", "password": "'+pWord+'", "date_first": "'+n+'",  "date_last": "'+n+'"}]}';
