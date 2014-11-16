@@ -3,11 +3,11 @@
       {"pose_name": { "english": "Downward Facing Dog", "sanskrit": "Adho Mukha Svanasana"},
       "pose_photo": "http://justingohde.github.io/Y_Test/images/pose_25.gif",
        "classification":{"english":"Standing", "sanskrit":"Resting"}
-      }
+      },
        {"pose_name": { "english": "Half moon", "sanskrit": "Ardha Candrāsana"},
       "pose_photo": "http://justingohde.github.io/Y_Test/images/pose_24.gif",
        "classification":{"english":"Standing asana", "sanskrit":"(Uttihista Sthiti)"}
-      }
+      },
        {"pose_name": { "english": "Crane", "sanskrit": "Bakāsana"},
       "pose_photo": "http://justingohde.github.io/Y_Test/images/pose_23.gif",
        "classification":{"english":"Arm Balance", "sanskrit":"(missing)"}
